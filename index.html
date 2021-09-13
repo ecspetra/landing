@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Читаем Россию</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="header__text-block">
+          <a href="https://www.livelib.ru/"
+            ><img src="img/logo-ll.svg" alt="logo-ll" class="header__logo"
+          /></a>
+          <h1>Читаем Россию!</h1>
+          <p>
+            «Читаем Россию» — это проект книжного рекомендательного сервиса
+            Лайвлиб для тех, кто хочет путешествовать по стране с помощью книг.
+            Мы собрали для вас специальные подборки, которые откроют для вас
+            каждый уголок России, от солнечного Краснодара до далекой Чукотки!
+          </p>
+          <h2>Что нужно делать?</h2>
+          <p>
+            Читать книги! Ниже вы увидите карту России. Выбирайте регион,
+            читайте любую книгу из подборки и пишите рецензию. Как только вы
+            закончите, регион автоматически окрасится в другой цвет. Так, книга
+            за книгой, вы сможете открыть всю карту России!
+          </p>
+          <button class="accept-btn">Участвую!</button>
+          <a href="#" class="down-arrow"
+            ><img src="img/down-arrow.svg" alt="down-arrow"
+          /></a>
+        </div>
+        <div class="header__img-block">
+          <img src="img/header-img.svg" alt="header-img" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <div class="achievements-wrapper">
+          <div class="left-block">
+            <h3 class="achievements__headline">Активные игроки получат:</h3>
+            <div class="achievements__block">
+              <div class="achievement">
+                <img
+                  class="achievement__icon"
+                  src="img/achievement-icon-1.svg"
+                  alt="achievement__icon"
+                />
+                <p>
+                  <span>значок участника в читательский профиль LiveLib</span>
+                  (за 3 открытых региона)
+                </p>
+              </div>
+              <div class="achievement">
+                <img
+                  class="achievement__icon"
+                  src="img/achievement-icon-2.svg"
+                  alt="achievement__icon"
+                />
+                <p>
+                  <span>награду в читательский профиль</span> (за всю открытую
+                  карту)
+                </p>
+              </div>
+            </div>
+            <div class="achievements__description">
+              <p>
+                Игра бессрочна, присоединиться можно в любой момент! Читайте в
+                комфортном для себя темпе, изучайте и открывайте страну с разных
+                ракурсов.
+              </p>
+            </div>
+          </div>
+          <div class="right-block">
+            <div class="achievements__steps">
+              <img class="steps-lines" src="img/lines.png" alt="steps-lines" />
+              <div class="step step-1">
+                <img
+                  class="step__icon"
+                  src="img/step-1-icon.svg"
+                  alt="step__icon"
+                />
+                <p>
+                  Выбирай<br />
+                  регион
+                </p>
+              </div>
+              <div class="step step-2">
+                <img
+                  class="step__icon"
+                  src="img/step-2-icon.svg"
+                  alt="step__icon"
+                />
+                <p>Регистрируйся на Лайвлибе</p>
+              </div>
+              <div class="step step-3">
+                <img
+                  class="step__icon"
+                  src="img/step-3-icon.svg"
+                  alt="step__icon"
+                />
+                <p>Выбирай книгу из подборки</p>
+              </div>
+              <div class="step step-4">
+                <img
+                  class="step__icon"
+                  src="img/step-4-icon.svg"
+                  alt="step__icon"
+                />
+                <p>Читай и пиши рецензию</p>
+              </div>
+              <div class="step step-5">
+                <img
+                  class="step__icon"
+                  src="img/step-5-icon.svg"
+                  alt="step__icon"
+                />
+                <p>Получи значок и бесценный опыт!</p>
+              </div>
+              <button class="accept-btn">Участвую!</button>
+            </div>
+          </div>
+        </div>
+        <div class="map-wrapper"></div>
+        <div class="targets-wrapper">
+          <h3 class="achievements__headline">Для чего этот проект?</h3>
+          <div class="target">
+            <div class="target__content">
+              <img
+                class="target__icon"
+                src="img/target-icon-1.svg"
+                alt="target__icon"
+              />
+              <p>
+                Изучение России<br />
+                с помощью книг
+              </p>
+            </div>
+          </div>
+          <div class="target">
+            <div class="target__content">
+              <img
+                class="target__icon"
+                src="img/target-icon-2.svg"
+                alt="target__icon"
+              />
+              <p>Продвижение русской литературы</p>
+            </div>
+          </div>
+          <div class="target">
+            <div class="target__content">
+              <img
+                class="target__icon"
+                src="img/target-icon-3.svg"
+                alt="target__icon"
+              />
+              <p>Сбор базы книг о регионах и региональных писателей</p>
+            </div>
+          </div>
+          <div class="gratitude">
+            <p>
+              Благодарим<br />
+              за поддержку региональные библиотеки!
+            </p>
+          </div>
+        </div>
+        <div class="reviews-wrapper">
+          <h3 class="reviews__headline">Рецензии участников проекта</h3>
+        </div>
+        <div class="faq-wrapper">
+          <h3 class="faq__headline">FAQ</h3>
+
+          <div class="accordion-wrapper">
+            <button class="accordion">Как начать игру?</button>
+            <div class="panel">
+              <p>
+                Просто кликните на кнопку «Участвовать». Если вы еще не
+                зарегистрировались на Лайвлибе –
+                <a
+                  href="https://www.livelib.ru/group/1021/post/84688-kak-napisat-i-opublikovat-retsenziyu"
+                  target="_blank"
+                  >зарегистрируйтесь</a
+                >.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Нужно ли оставлять заявку на выбранную книгу?
+            </button>
+            <div class="panel">
+              <p>
+                Нет, не нужно. Прочитанная книга после написания рецензии
+                зачтется автоматически.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Что нужно сделать, чтобы книга зачлась в статистике?
+            </button>
+            <div class="panel">
+              <p>
+                Отметить ее прочитанной (кнопка «добавить» на странице книги) и
+                опубликовать рецензию (кнопка «Написать рецензию»). После этого
+                книга автоматически зачтется в статистике.
+              </p>
+            </div>
+
+            <button class="accordion">Обязательно ли писать рецензии?</button>
+            <div class="panel">
+              <p>
+                Да, обязательно. Формулируя впечатления о прочитанном, вы лучше
+                запомните книгу и качественнее переживете прочитанное. Кроме
+                того, написать рецензию
+                <a
+                  href="https://www.livelib.ru/group/1021/post/84688-kak-napisat-i-opublikovat-retsenziyu"
+                  target="_blank"
+                  >совсем не сложно</a
+                >!
+              </p>
+            </div>
+
+            <button class="accordion">
+              Я хочу прочитать другую книгу о регионе, которой нет в подборке.
+              Можно?
+            </button>
+            <div class="panel">
+              <p>
+                Да, только сначала добавьте книгу в подборку – сделать это может
+                любой участник. Если книга подходит под условия (то есть
+                раскрывает определенный регион), модератор одобрит ее, и книга
+                будет добавлена в регион/подборку. Как добавить книгу в
+                подборку: заходите в нужную подборку, жмите на зеленую иконку со
+                знаком “+” и выбирайте нужную книгу. Клик! Книга добавлена,
+                вскоре модератор ее проверит.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Хочу прочитать книгу из подборки, но нигде не могу ее найти. Что
+              делать?
+            </button>
+            <div class="panel">
+              <p>
+                Попросите о помощи в
+                <a
+                  href="https://www.livelib.ru/group/1021/post/84691-pomogite-najti-knigu"
+                  target="_blank"
+                  >этой теме</a
+                >.
+              </p>
+            </div>
+
+            <button class="accordion">
+              В какой срок нужно прочитать книги?
+            </button>
+            <div class="panel">
+              <p>
+                Это неважно, игра не имеет сроков и дедлайнов. Читайте и пишите
+                рецензии в удобном для вас темпе.
+              </p>
+            </div>
+
+            <button class="accordion">
+              Где можно смотреть свою статистику по прочитанным книгам?
+            </button>
+            <div class="panel">
+              <p>[требует уточнения у разрабов]</p>
+            </div>
+
+            <button class="accordion">
+              Имеет ли значение, в каком порядке я открываю регионы?
+            </button>
+            <div class="panel">
+              <p>Нет, не имеет.</p>
+            </div>
+
+            <button class="accordion">Когда я смогу получить значок?</button>
+            <div class="panel">
+              <p>Когда откроете 3 региона.</p>
+            </div>
+
+            <button class="accordion">А награду?</button>
+            <div class="panel">
+              <p>
+                Когда вы откроете все регионы и вся карта окрасится в синий
+                цвет!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="partners-wrapper">
+          <h3 class="partners__headline">Партнеры</h3>
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <img src="img/partners-logo.svg" alt="partners-logo" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <p>© Лайвлиб 2006-2021</p>
+      </div>
+    </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
