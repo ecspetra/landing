@@ -1,19 +1,9 @@
-$dark_main: #252626;
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 1440px;
-  padding: 40px;
-}
-
 .header-wrapper {
   color: white;
   background-image: url("../img/header-bg.svg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -21,22 +11,24 @@ body {
   justify-items: space-between;
   align-items: center;
   grid-template-areas: "text-block img";
-  padding: 0 14px 0 122px;
+  padding: 0 24px 0 122px;
+  border-radius: 40px;
   .header__text-block {
     grid-area: text-block;
     max-width: 485px;
     text-align: center;
+    margin: 11px 0 0;
     .header__logo {
       width: 144px;
       height: 23px;
     }
     h1 {
       font: 700 64px/64px "Source Sans Pro", sans-serif;
-      margin: 42px 0 20px;
+      margin: 38px 0 21px;
     }
     h2 {
       font: 700 40px/48px "Source Sans Pro", sans-serif;
-      margin: 40px 0 10px;
+      margin: 39px 0 13px;
     }
     p {
       font: 600 18px/24px "Source Sans Pro", sans-serif;
@@ -48,6 +40,11 @@ body {
       width: 40px;
       height: 40px;
       margin: 0 auto;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       img {
         width: 40px;
         height: 40px;
@@ -63,10 +60,59 @@ body {
     width: 100%;
     max-width: 747px;
     height: auto;
+    margin: 40px 0 0;
     img {
       width: 100%;
       max-width: 747px;
       height: auto;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .header-wrapper {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-wrapper {
+    padding: 40px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas:
+      "img"
+      "text-block";
+    .header__img-block {
+      max-width: 400px;
+      margin: 0 0 40px;
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .header-wrapper {
+    padding: 40px 16px;
+    .header__text-block {
+      margin: 0;
+    }
+    h1 {
+      font: 700 40px/40px "Source Sans Pro", sans-serif !important;
+      margin: 38px 0 21px;
+    }
+    h2 {
+      font: 700 28px/36px "Source Sans Pro", sans-serif !important;
+      margin: 39px 0 13px;
+    }
+    .header__img-block {
+      max-width: 300px;
+      margin: 0 0 40px;
+      img {
+        max-width: 300px;
+      }
     }
   }
 }

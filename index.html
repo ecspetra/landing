@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/style.2021091415.css" />
+    <link rel="stylesheet" href="style.2021091415-mob.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Читаем Россию</title>
   </head>
   <body>
@@ -39,7 +48,7 @@
             за книгой, вы сможете открыть всю карту России!
           </p>
           <button class="accept-btn">Участвую!</button>
-          <a href="#" class="down-arrow"
+          <a href="#partners-wrapper" class="down-arrow" id="link-to-bottom"
             ><img src="img/down-arrow.svg" alt="down-arrow"
           /></a>
         </div>
@@ -50,9 +59,9 @@
     </header>
     <main>
       <div class="main-wrapper">
-        <div class="achievements-wrapper">
+        <div class="achievements-wrapper" id="achievements">
+          <h3 class="achievements__headline">Активные игроки получат:</h3>
           <div class="left-block">
-            <h3 class="achievements__headline">Активные игроки получат:</h3>
             <div class="achievements__block">
               <div class="achievement">
                 <img
@@ -137,7 +146,7 @@
         </div>
         <div class="map-wrapper"></div>
         <div class="targets-wrapper">
-          <h3 class="achievements__headline">Для чего этот проект?</h3>
+          <h3 class="targets__headline">Для чего этот проект?</h3>
           <div class="target">
             <div class="target__content">
               <img
@@ -180,6 +189,1662 @@
         </div>
         <div class="reviews-wrapper">
           <h3 class="reviews__headline">Рецензии участников проекта</h3>
+
+          <article class="main-block main-br">
+            <div class="main-block__wrapper">
+              <input
+                class="slider-toggle"
+                type="radio"
+                id="btn40-1"
+                name="slider40"
+                checked=""
+              />
+              <input
+                class="slider-toggle"
+                type="radio"
+                id="btn40-2"
+                name="slider40"
+              />
+              <input
+                class="slider-toggle"
+                type="radio"
+                id="btn40-3"
+                name="slider40"
+              />
+              <div class="slider-btn__next">
+                <label for="btn40-1"></label>
+                <label for="btn40-2"></label>
+                <label for="btn40-3"></label>
+              </div>
+              <div class="slider-btn__prev">
+                <label for="btn40-1"></label>
+                <label for="btn40-2"></label>
+                <label for="btn40-3"></label>
+              </div>
+              <div class="main-block__limiter">
+                <ul class="main-block__list">
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Жоэль Диккер</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Правда о деле Гарри Квеберта</span>
+                      <span itemprop="author">Жоэль Диккер</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-17-086262-7</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/rebeccapopova?es=2274358"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/rebeccapopova/40x40/83a5/Rebekka_Popova.jpg"
+                          alt="Ребекка Попова (rebeccapopova)"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden"
+                        >Ребекка Попова (rebeccapopova)</span
+                      >
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/rebeccapopova?es=2274358"
+                            title="Ребекка Попова (rebeccapopova)"
+                            >Ребекка Попова</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Эксперт Лайвлиба
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2274358);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1002494679-pravda-o-dele-garri-kveberta-zhoel-dikker?es=2274358"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1002494679/200/d22d/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Жоэль Диккер - Правда о деле Гарри Квеберта"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1002494679-pravda-o-dele-garri-kveberta-zhoel-dikker?es=2274358"
+                            >Правда о деле Гарри Квеберта</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/447684?es=2274358&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Жоэль Диккер</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>4,4</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="936281"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1002494679"
+                            class="
+                              userbook-container
+                              ub-edition-1002494679 ub-book-1957553
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1002494679-0-936281"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1002494679, 0, 0, 936281, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1002494679"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-06 01:58:05</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2274358</span
+                        >
+
+                        <p class="lenta-card__date">
+                          6&nbsp;сентября&nbsp;2021&nbsp;г. 01:58
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>382</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 4.5 </span>
+
+                        <a href="/review/2274358"
+                          >История создания одного литературного шедевра о
+                          любви</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Признаться, я так долго читала эту длинную...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Признаться, я так долго читала эту длинную книгу, что
+                          постепенно у меня создалось впечатление, что закончить
+                          ее чтение будет означать для меня нечто настолько же
+                          феерическое, как... разродиться от некого бремени. Да
+                          и втягивалась в ткань повествования и принимала
+                          заданные автором «условия игры» тоже на удивление
+                          тяжело, все время норовя бросить чтение и предпочесть
+                          потратить свое время на нечто другое... Ну, Ок... Так
+                          что же мы имеем в сухом остатке? Не каждому молодому
+                          человеку, лелеющему амбициозные надежды сделаться
+                          великим писателем, везет так, как повезло герою этой
+                          книги. Только представьте себе: волею судеб в своем
+                          универе он…
+                        </p>
+                      </div>
+                      <a href="/review/2274358" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Джо Спейн</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Кто убил Оливию Коллинз?</span>
+                      <span itemprop="author">Джо Спейн</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-907143-61-6</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/be-free?es=2285068"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/be-free/40x40/3e41/befree.jpg"
+                          alt="be-free"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden">be-free</span>
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/be-free?es=2285068"
+                            title="be-free"
+                            >be-free</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Эксперт Лайвлиба
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2285068);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1003967242-kto-ubil-oliviyu-kollinz-dzho-spejn?es=2285068"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1003967242/200/7152/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Джо Спейн - Кто убил Оливию Коллинз?"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1003967242-kto-ubil-oliviyu-kollinz-dzho-spejn?es=2285068"
+                            >Кто убил Оливию Коллинз?</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/1331521?es=2285068&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Джо Спейн</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>3,9</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="282678"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1003967242"
+                            class="
+                              userbook-container
+                              ub-edition-1003967242 ub-book-2873461
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1003967242-0-282678"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1003967242, 0, 0, 282678, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1003967242"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-13 05:34:46</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2285068</span
+                        >
+
+                        <p class="lenta-card__date">
+                          13&nbsp;сентября&nbsp;2021&nbsp;г. 05:34
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>429</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 4 </span>
+
+                        <a href="/review/2285068"
+                          >Герметичный детектив в стиле "Отчаянных
+                          домохозяек"</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Внезапно захотелось детективов. В предыдущие...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Внезапно захотелось детективов. В предыдущие годы
+                          летом меня тянуло на романтическую литературу, а тут
+                          такой поворот. Наверное, потому что очень давно не
+                          читала криминальные романы, а они, если не на реальных
+                          событиях как сахар. Да, почти вредные, потому что
+                          пустая трата времени. Но иногда так хочется съесть
+                          чего-нибудь сладенького и порадовать себя. В общем, не
+                          стала отказывать себе в удовольствии. И не зря. В
+                          небольшом элитном поселке около Дублина в одном из
+                          домов обнаруживают тело погибшей Оливии Коллинз.
+                          Смерть наступила за три месяца до этого события. Как
+                          же соседи могли не заметить отсутствие Оливии, живя в
+                          тесном мирке? Или они…
+                        </p>
+                      </div>
+                      <a href="/review/2285068" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden"
+                      >Фрэнсис Хардинг</span
+                    >
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Песня кукушки</span>
+                      <span itemprop="author">Фрэнсис Хардинг</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-00115-648-2</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/JewelJul?es=2282362"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/JewelJul/40x40/cc4a/JewelJul.jpg"
+                          alt="JewelJul"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden">JewelJul</span>
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/JewelJul?es=2282362"
+                            title="JewelJul"
+                            >JewelJul</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">Негуру</p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2282362);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1002897446-pesnya-kukushki-frensis-harding?es=2282362"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1002897446/200/badb/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Фрэнсис Хардинг - Песня кукушки"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1002897446-pesnya-kukushki-frensis-harding?es=2282362"
+                            >Песня кукушки</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/398080?es=2282362&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Фрэнсис Хардинг</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>4,2</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="824948"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1002897446"
+                            class="
+                              userbook-container
+                              ub-edition-1002897446 ub-book-1396772
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1002897446-0-824948"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1002897446, 0, 0, 824948, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1002897446"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-11 14:34:41</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2282362</span
+                        >
+
+                        <p class="lenta-card__date">
+                          11&nbsp;сентября&nbsp;2021&nbsp;г. 14:34
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>678</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 5 </span>
+
+                        <a href="/review/2282362"
+                          >Под мост, жуткий голод, съесть куклу</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Все, определилась! Фрэнсис Хардинг однозначно...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Все, определилась! Фрэнсис Хардинг однозначно подлежит
+                          прочтению! Есть у меня заветный список авторов, чьи
+                          книги я хочу прочесть от передней корки первого
+                          рассказа и до последнего многоточия последнего цикла.
+                          Хардинг точно туда. После первой книги я ещё думала,
+                          после второй - сомнений не осталось. Ее истории
+                          разные, разные сеттинги, разные тематики, но одно знаю
+                          точно - это всегда будет что-то оригинальное,
+                          уникальное, доселе нечитанное. Это может быть
+                          загадочная Каверна, где выращивают сыры, это может
+                          быть межвоенная Англия, но с изнанкой из Фейри. Это
+                          может быть что угодно, но это что угодно обязательно
+                          будет необычным, или обычным, но…
+                        </p>
+                      </div>
+                      <a href="/review/2282362" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Поппи Брайт</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Изысканный труп</span>
+                      <span itemprop="author">Поппи Брайт</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn"
+                        >5-17-029085-3, 5-9713-0384-8, 5-9578-1557-8,
+                        985-13-6254-9</span
+                      >
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/kittymara?es=2273923"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/kittymara/40x40/2797/kittymara.jpg"
+                          alt="kittymara"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden">kittymara</span>
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/kittymara?es=2273923"
+                            title="kittymara"
+                            >kittymara</a
+                          >
+                          <a class="header-card__category" href="/reviews"></a>
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Подумаешь, я еще и вышивать могу...
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2273923);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1000269053-izyskannyj-trup-poppi-brajt?es=2273923"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1000269053/200/1f73/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Поппи Брайт - Изысканный труп"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1000269053-izyskannyj-trup-poppi-brajt?es=2273923"
+                            >Изысканный труп</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/11760?es=2273923&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Поппи Брайт</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>3,7</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="268269"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1000269053"
+                            class="
+                              userbook-container
+                              ub-edition-1000269053 ub-book-166414
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1000269053-0-268269"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1000269053, 0, 0, 268269, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1000269053"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-05 21:20:23</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2273923</span
+                        >
+
+                        <p class="lenta-card__date">
+                          5&nbsp;сентября&nbsp;2021&nbsp;г. 21:20
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>1K</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 5 </span>
+
+                        <a href="/review/2273923"
+                          >Ох, уж эта поппи брайт - чертовка</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Конечно, очень патологичная вещь, точнее,...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Конечно, очень патологичная вещь, точнее, совершенно,
+                          исключительно патологичная. Будет для очень многих
+                          читателей. И действительно невозможная для прочтения.
+                          Но никак не мой случай, ибо я поставила высший балл.
+                          То есть для меня оно практически как лиричная поэма,
+                          особенно, по сравнению с одной книгой, которую недавно
+                          просто "не шмогла" буквально с первых страниц, потому
+                          что там чуть ли не в каждой строке ода фекалиям. Я
+                          совсем ничего не имею супротив кокашек, хоть они и не
+                          нравятся мне, причем, категорически - как явление. Но
+                          читать о них? Нет, это мое личное "не шмогла, мужик,
+                          не шмогла". Нда. А тут, ну что тут. Натурально просто
+                          красота.…
+                        </p>
+                      </div>
+                      <a href="/review/2273923" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Эй Джей Гнюзи</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Девочка из стен</span>
+                      <span itemprop="author">Эй Джей Гнюзи</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-04-117429-3</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/Arielliasa?es=2274679"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/Arielliasa/40x40/4e11/Arielliasa.jpg"
+                          alt="Arielliasa"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden"
+                        >Arielliasa</span
+                      >
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/Arielliasa?es=2274679"
+                            title="Arielliasa"
+                            >Arielliasa</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Нервная ценительница прекрасного
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2274679);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1006135837-devochka-iz-sten-ej-dzhej-gnyuzi?es=2274679"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1006135837/200/4338/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Эй Джей Гнюзи - Девочка из стен"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1006135837-devochka-iz-sten-ej-dzhej-gnyuzi?es=2274679"
+                            >Девочка из стен</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/1787152?es=2274679&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Эй Джей Гнюзи</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>3,2</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="541440"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1006135837"
+                            class="
+                              userbook-container
+                              ub-edition-1006135837 ub-book-4283842
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1006135837-0-541440"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1006135837, 0, 0, 541440, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1006135837"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-06 11:31:21</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2274679</span
+                        >
+
+                        <p class="lenta-card__date">
+                          6&nbsp;сентября&nbsp;2021&nbsp;г. 11:31
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>780</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 3 </span>
+
+                        <a href="/review/2274679"
+                          >Фантик без конфетки внутри.</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Какое название вкусное, подумала я, какой жанр...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Какое название вкусное, подумала я, какой жанр
+                          подходящий, ведь всё будет просто замечательно? Три
+                          раза ха-ха-ха, писатель явно издевался надо мной
+                          лично, когда решил это вылить на бумагу. Так и
+                          представляю, как он злодейски хохочет над всеми, кто
+                          додумается повестись на заявленный триллер. Каждая
+                          страница написанного это нагнетание того, что никогда
+                          не произойдёт. Каждый персонаж не более, чем
+                          декорация, которую никто так и не подумает раскрыть,
+                          ведь кому они вообще интересны? Правильно, абсолютно
+                          никому. А теперь поподробнее о грустном. Сюжет. Всё
+                          начинается со слов Элизы — девочки, потерявшей своих
+                          родителей и вернувшейся в дом, в…
+                        </p>
+                      </div>
+                      <a href="/review/2274679" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Джон Шорс</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Танцующая на лепестках лотоса</span>
+                      <span itemprop="author">Джон Шорс</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-9910-3306-0</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/Tarakosha?es=2264185"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/Tarakosha/40x40/1e75/Tarakosha.jpg"
+                          alt="Tarakosha"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden">Tarakosha</span>
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/Tarakosha?es=2264185"
+                            title="Tarakosha"
+                            >Tarakosha</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Субъективная попытка объективности
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2264185);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1001427219-tantsuyuschaya-na-lepestkah-lotosa-dzhon-shors?es=2264185"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1001427219/200/a880/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Джон Шорс - Танцующая на лепестках лотоса"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1001427219-tantsuyuschaya-na-lepestkah-lotosa-dzhon-shors?es=2264185"
+                            >Танцующая на лепестках лотоса</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/236565?es=2264185&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Джон Шорс</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>4,2</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="890841"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1001427219"
+                            class="
+                              userbook-container
+                              ub-edition-1001427219 ub-book-1229464
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1001427219-0-890841"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1001427219, 0, 0, 890841, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1001427219"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-08-30 20:16:36</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2264185</span
+                        >
+
+                        <p class="lenta-card__date">
+                          30&nbsp;августа&nbsp;2021&nbsp;г. 20:16
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>1K</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 3.5 </span>
+
+                        <a href="/review/2264185">Любовь и кровь</a>
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Действие романа разворачивается в Юго-Восточной...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Действие романа разворачивается в Юго-Восточной Азии
+                          на территории современной Камбоджи и рассказывает о
+                          жестокой и кровопролитной войне между кхмерами и
+                          чамами, вторгшимися на их земли с завоевательными
+                          целями, что привело к оккупации на долгих четыре года,
+                          в течение которых захваченный поработителями народ во
+                          главе с умевшим скрыться в джунглях наследным принцем
+                          готовился к решающей битве, в результате которой будет
+                          обретена свобода. Под властью чамов оказался и
+                          легендарный, самый большой храм в мире, посвящённый
+                          богу Вишну Ангкор-Ват, чьё изображение есть на флаге
+                          Камбоджи, а также и на обложке этой книги, поскольку
+                          многие события романа…
+                        </p>
+                      </div>
+                      <a href="/review/2264185" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Юрий Некрасов</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Призраки осени</span>
+                      <span itemprop="author">Юрий Некрасов</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-04-122984-9</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/Clickosoftsky?es=2282056"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/Clickosoftsky/40x40/1abc/Clickosoftsky.jpg"
+                          alt="Clickosoftsky"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden"
+                        >Clickosoftsky</span
+                      >
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/Clickosoftsky?es=2282056"
+                            title="Clickosoftsky"
+                            >Clickosoftsky</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Старожил Лайвлиба
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2282056);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1006469446-prizraki-oseni-yurij-nekrasov?es=2282056"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1006469446/200/0d96/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Юрий Некрасов - Призраки осени"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1006469446-prizraki-oseni-yurij-nekrasov?es=2282056"
+                            >Призраки осени</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/331710?es=2282056&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Юрий Некрасов</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>3,7</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="246075"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1006469446"
+                            class="
+                              userbook-container
+                              ub-edition-1006469446 ub-book-4452241
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1006469446-0-246075"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1006469446, 0, 0, 246075, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1006469446"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-11 11:07:10</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2282056</span
+                        >
+
+                        <p class="lenta-card__date">
+                          11&nbsp;сентября&nbsp;2021&nbsp;г. 11:07
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>1K</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 4 </span>
+
+                        <a href="/review/2282056"
+                          >Одиноким призракам предоставляется общежитие</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Правильнее предоставить мёртвым самим решать...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Правильнее предоставить мёртвым самим решать загробные
+                          делаСольный роман Юрия «Юргена» Некрасова очень
+                          правильно случилось прочитать именно в сентябре. Не
+                          только ради названия или времени действия — везением
+                          было угодить в дымчато-золотой промежуток между
+                          легкомыслием лета и депрессией поздней осени. Поначалу
+                          кажется, что читаешь абсурдно-комический и мистический
+                          нуар на манер «Короля Чумы» Эдгара По, уже готов
+                          снисходительно похохатывать, сладко ёжиться и
+                          интеллигентно морщиться при неаппетитных подробностях.
+                          Но сюжет быстро и незаметно накачивает мускулы, при
+                          этом становясь захватывающе-непонятным. Он вынуждает
+                          поспешно достраивать за…
+                        </p>
+                      </div>
+                      <a href="/review/2282056" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden">Лю Цысинь</span>
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Эпоха сверхновой</span>
+                      <span itemprop="author">Лю Цысинь</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-04-111752-8</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/VaninaEl?es=2280115"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/VaninaEl/40x40/a4fb/VaninaEl.jpg"
+                          alt="VaninaEl"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden">VaninaEl</span>
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/VaninaEl?es=2280115"
+                            title="VaninaEl"
+                            >VaninaEl</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status">
+                            Я по натуре не Пушкин, я по натуре Белинский
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2280115);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1005169399-epoha-sverhnovoj-lyu-tsysin?es=2280115"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1005169399/200/8f39/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Лю Цысинь - Эпоха сверхновой"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1005169399-epoha-sverhnovoj-lyu-tsysin?es=2280115"
+                            >Эпоха сверхновой</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/588904?es=2280115&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Лю Цысинь</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>3,5</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="273432"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1005169399"
+                            class="
+                              userbook-container
+                              ub-edition-1005169399 ub-book-3535072
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1005169399-0-273432"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1005169399, 0, 0, 273432, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1005169399"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-09 22:57:28</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2280115</span
+                        >
+
+                        <p class="lenta-card__date">
+                          9&nbsp;сентября&nbsp;2021&nbsp;г. 22:57
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>1K</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 3.5 </span>
+
+                        <a href="/review/2280115">Детский мир</a>
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Занимательный вариант антиутопического...
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Занимательный вариант антиутопического будущего, даром
+                          что совершенно нереальный. Но всё равно читать было
+                          интересно как минимум до середины. Дальше автора, что
+                          называется, «понесло», и без того натянутая и
+                          неосуществимая на практике ситуация стала и вовсе
+                          неуправляемой. Дочитывала уже на автопилоте и финалом
+                          осталась очень разочарована – откуда он в принципе мог
+                          взяться, такой финал, совершенно непонятно. В этом
+                          выдуманном мире случилось внезапное несчастье – в
+                          непосредственной близости к нашей родной Солнечной
+                          системе взорвалась звезда. Никому не известная, о
+                          существовании которой ранее никто и не подозревал.
+                          Взрыв и последовавшие за ним…
+                        </p>
+                      </div>
+                      <a href="/review/2280115" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+
+                  <li
+                    itemprop="review"
+                    itemscope=""
+                    itemtype="http://schema.org/Review"
+                    class="review-card lenta__item main-block__item"
+                  >
+                    <span itemprop="author" class="hidden"
+                      >Наталия Мещанинова</span
+                    >
+                    <span
+                      itemprop="itemReviewed"
+                      itemscope=""
+                      itemtype="https://schema.org/Book"
+                      class="hidden"
+                    >
+                      <span itemprop="name">Рассказы</span>
+                      <span itemprop="author">Наталия Мещанинова</span>
+                      <span itemprop="author"></span>
+                      <span itemprop="isbn">978-5-9906802-4-1</span>
+                    </span>
+
+                    <div class="header-card">
+                      <a
+                        class="header-card-user"
+                        href="/reader/Kseniya_Ustinova?es=2274544"
+                      >
+                        <img
+                          data-pagespeed-no-defer=""
+                          class="header-card-user__avatar"
+                          width="100%"
+                          height="100%"
+                          src="https://i.livelib.ru/userpic/Kseniya_Ustinova/40x40/e88e/Kseniya_Ustinova.jpg"
+                          alt="Kseniya_Ustinova"
+                        />
+                      </a>
+                      <span itemprop="publisher" class="hidden"
+                        >Kseniya_Ustinova</span
+                      >
+                      <div class="header-card__wrapper">
+                        <div class="header-card__row1" itemprop="author">
+                          <a
+                            class="header-card-user__name"
+                            href="/reader/Kseniya_Ustinova?es=2274544"
+                            title="Kseniya_Ustinova"
+                            >Kseniya_Ustinova</a
+                          >
+                          <a class="header-card__category" href="/reviews"
+                            >написала рецензию</a
+                          >
+                        </div>
+                        <div class="header-card__row2">
+                          <p class="header-card-user__class">Эксперт</p>
+                          <p class="header-card-user__status"></p>
+                        </div>
+                      </div>
+
+                      <div class="header-card__menu">
+                        <div class="header-card__menu-block">
+                          <a
+                            href="javascript:void(0)"
+                            onclick="return ll_get_claim_form(event, 'review', 2274544);"
+                            title="Пожаловаться"
+                            >Пожаловаться</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lenta-card">
+                      <div class="lenta-card-book">
+                        <a
+                          class="lenta-card-book__link"
+                          href="/book/1002752289-rasskazy-nataliya-meschaninova?es=2274544"
+                        >
+                          <img
+                            data-pagespeed-no-defer=""
+                            class="lenta-card-book__img"
+                            src="https://s1.livelib.ru/boocover/1002752289/200/ddfd/boocover.jpg"
+                            width="100%"
+                            height="100%"
+                            alt="Наталия Мещанинова - Рассказы"
+                          />
+                        </a>
+                        <div class="lenta-card-book__wrapper">
+                          <a
+                            class="lenta-card__book-title"
+                            href="/book/1002752289-rasskazy-nataliya-meschaninova?es=2274544"
+                            >Рассказы</a
+                          >
+                          <p class="lenta-card__author-wrap">
+                            <a
+                              class="lenta-card__author"
+                              href="/author/1087159?es=2274544&amp;reclist=portal_page&amp;rvid=3246997206"
+                              >Наталия Мещанинова</a
+                            >
+                          </p>
+                          <div class="lenta-card__rating">
+                            <span>4,3</span>
+                          </div>
+
+                          <div
+                            data-view_mode="plus"
+                            data-userbook_id="0"
+                            data-strict_edition_id="0"
+                            data-rand_id="440681"
+                            data-show_extended=""
+                            data-show=""
+                            data-edition_id="1002752289"
+                            class="
+                              userbook-container
+                              ub-edition-1002752289 ub-book-2233558
+                              btn-add-plus__wrapper
+                              ub-container
+                            "
+                            data-asource="review"
+                            data-design="ll2019"
+                            id="xa-main-1002752289-0-440681"
+                          >
+                            <a
+                              href="javascript:void(0);"
+                              onclick="ub_form2020(1002752289, 0, 0, 440681, event);"
+                              class="btn-add-plus"
+                              ><i></i
+                            ></a>
+                            <input
+                              type="hidden"
+                              id="ub-viewmode-1002752289"
+                              value="btn-add-plus"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="lenta-card__details">
+                        <span itemprop="datePublished" style="display: none"
+                          >2021-09-06 10:14:55</span
+                        >
+                        <span itemprop="url" style="display: none"
+                          >www.livelib.ru/review/2274544</span
+                        >
+
+                        <p class="lenta-card__date">
+                          6&nbsp;сентября&nbsp;2021&nbsp;г. 10:14
+                        </p>
+
+                        <p class="lenta-card__aliases">
+                          <span>2K</span>
+                        </p>
+                      </div>
+                      <h3 class="lenta-card__title">
+                        <span class="lenta-card__mymark"> 4 </span>
+
+                        <a href="/review/2274544"
+                          >Наши болезненные воспоминания с нами навсегда</a
+                        >
+                      </h3>
+                      <span class="hidden" itemprop="description">
+                        Наши болезненные воспоминания с нами навсегда....
+                      </span>
+
+                      <div class="lenta-card__text">
+                        <p>
+                          Наши болезненные воспоминания с нами навсегда. Иногда
+                          они преследуют, иногда вспыхивают и пропадают, иногда
+                          они повод поговорить о проблемах, которые зудят пока
+                          их не проговаривают. Наталия Мещанинова искренне
+                          делится своей памятью, своей историей, которая
+                          происходила в 80-90-ые, и, я уверенна, где-то
+                          происходит и сейчас. О замалчивании, о жутких
+                          обстоятельствах, о невозможных для ребенка выборах,
+                          между злом и злом. Взрослый человек не всегда
+                          понимает, что в его жизни происходит, что
+                          по-настоящему чувствуют и думают близкие, как
+                          поступить правильно. А ребенок тем более ничего не
+                          понимает, он создает мир с нуля, в каком-то своем
+                          мистическом…
+                        </p>
+                      </div>
+                      <a href="/review/2274544" class="btn__read-more"
+                        >Читать полностью</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
         <div class="faq-wrapper">
           <h3 class="faq__headline">FAQ</h3>
@@ -302,18 +1967,40 @@
             </div>
           </div>
         </div>
-        <div class="partners-wrapper">
+        <div class="partners-wrapper" id="partners-wrapper">
           <h3 class="partners__headline">Партнеры</h3>
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
-          <img src="img/partners-logo.svg" alt="partners-logo" />
+          <div class="partners__block">
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="img/partners-logo.svg" alt="partners-logo"
+            /></a>
+          </div>
         </div>
       </div>
     </main>
@@ -323,21 +2010,6 @@
       </div>
     </footer>
 
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
