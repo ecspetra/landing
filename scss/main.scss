@@ -73,8 +73,9 @@ body.disabled-scroll {
       .achievements__description {
         background: #f8db73;
         border-radius: 40px;
-        padding: 30px 93px 34px;
+        padding: 54px 93px 58px;
         box-sizing: border-box;
+
         p {
           font: 600 24px/32px "Source Sans Pro", sans-serif;
         }
@@ -162,11 +163,44 @@ body.disabled-scroll {
     }
   }
   .map-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    #map-tooltip {
+      div {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        background-color: #3e99ed;
+        font: 700 32px / 48px "Source Sans Pro", sans-serif;
+        padding: 4px 20px;
+        border-radius: 18px;
+        text-align: center;
+      }
+    }
+
+    #russian-map {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+    }
   }
   .targets-wrapper {
     text-align: center;
     max-width: 752px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-rows: minmax(min-content, max-content);
@@ -393,6 +427,11 @@ a {
   .achievements__description {
     padding: 30px 40px 34px !important;
   }
+  #map-tooltip {
+    div {
+      font: 700 24px / 36px "Source Sans Pro", sans-serif !important;
+    }
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -442,6 +481,17 @@ a {
       font: 600 24px/32px "Source Sans Pro", sans-serif !important;
       max-width: 200px;
       margin: 0 auto !important;
+    }
+  }
+  .map-wrapper {
+    height: 300px;
+  }
+  #russian-map {
+    overflow: auto;
+
+    svg {
+      width: auto !important;
+      height: auto !important;
     }
   }
 }
@@ -521,5 +571,20 @@ a {
       width: 122px !important;
       height: auto;
     }
+  }
+  #map-tooltip {
+    div {
+      font: 700 20px / 24px "Source Sans Pro", sans-serif !important;
+      padding: 4px 10px !important;
+      border-radius: 12px !important;
+    }
+  }
+  #russian-map {
+    overflow: scroll !important;
+  }
+  .map-wrapper {
+    width: 300px !important;
+    height: 200px !important;
+    overflow: auto;
   }
 }
