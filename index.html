@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/style.2021091415.css" />
-    <link rel="stylesheet" href="style.2021091415-mob.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,8 +20,6 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Читаем Россию</title>
   </head>
   <body>
@@ -180,12 +176,16 @@
               <p>Сбор базы книг о регионах и региональных писателей</p>
             </div>
           </div>
-          <div class="gratitude">
+          <a
+            href="https://www.livelib.ru/group/1021/post/84703-blagodarim-za-pomosch-regionalnye-biblioteki"
+            target="_blank"
+            class="gratitude"
+          >
             <p>
               Благодарим<br />
               за поддержку региональные библиотеки!
             </p>
-          </div>
+          </a>
         </div>
         <div class="reviews-wrapper">
           <h3 class="reviews__headline">Рецензии участников проекта</h3>
@@ -2009,6 +2009,191 @@
         <p>© Лайвлиб 2006-2021</p>
       </div>
     </footer>
+
+    <div
+      class="reg-popup modal ll-loginform reg-popup-v2"
+      id="ll-loginform-popup-wrapper"
+    >
+      <form id="regForm__checkin" action="javascript:void(0);">
+        <div class="reg-popup__wrapper">
+          <h3>
+            Хочешь принять участие? Регистрируйся на сайте<br />
+            и начинай игру!
+          </h3>
+          <p class="reg-popup__text" id="lrow-action-text"></p>
+          <input
+            id="socnetpopup-input-redirect-login"
+            type="hidden"
+            name="user[redirect]"
+            value=""
+          />
+          <input
+            id="socnetpopup-input-onclick-login"
+            type="hidden"
+            name="user[onclick]"
+            value=""
+          />
+          <input
+            id="socnetpopup-input-source-login"
+            type="hidden"
+            name="source"
+            value="headerauth"
+          />
+          <input
+            id="socnetpopup-input-popup-login"
+            type="hidden"
+            name="popup"
+            value="regform"
+          />
+          <input
+            id="socnetpopup-input-url-login"
+            type="hidden"
+            name="current_url"
+            value=""
+          />
+          <div class="regForm__checkin-simplebar" data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: 0px">
+              <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+              </div>
+              <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px">
+                  <div
+                    class="simplebar-content-wrapper"
+                    style="height: 100%; overflow: hidden"
+                  >
+                    <div class="simplebar-content" style="padding: 0px">
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('vkontakte', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="VK"
+                        class="reg-popup__sal icon-vkontakte"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('facebook', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="Facebook"
+                        class="reg-popup__sal icon-facebook"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('google', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="Google"
+                        class="reg-popup__sal icon-google"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('odnoklassniki', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="Odnoklassniki"
+                        class="reg-popup__sal icon-odnoklassniki"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('twitter', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="Twitter"
+                        class="reg-popup__sal icon-twitter"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('mailru', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="Mail.ru"
+                        class="reg-popup__sal icon-mailru"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('litres', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="ЛитРес"
+                        class="reg-popup__sal icon-litres"
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        onclick="network_auth('livejournal', '', loginform_socnet, 'regform');send_reg_events();"
+                        title="Живой Журнал"
+                        class="reg-popup__sal icon-livejournal"
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="simplebar-placeholder"
+                style="width: 364px; height: 128px"
+              ></div>
+            </div>
+            <div
+              class="simplebar-track simplebar-horizontal"
+              style="visibility: hidden"
+            >
+              <div
+                class="simplebar-scrollbar"
+                style="width: 0px; display: none"
+              ></div>
+            </div>
+            <div
+              class="simplebar-track simplebar-vertical"
+              style="visibility: hidden"
+            >
+              <div
+                class="simplebar-scrollbar"
+                style="height: 0px; display: none"
+              ></div>
+            </div>
+          </div>
+          <span>или</span>
+          <input
+            id="checkin-email"
+            class="reg-popup__input-req validate-initialized"
+            type="text"
+            placeholder="Введите e-mail или никнейм"
+            required=""
+          />
+          <span
+            class="reg-popup__unvalid"
+            id="check-email-nicname-popup__unvalid"
+          ></span>
+          <button
+            class="reg-popup__btnNext"
+            disabled="disabled"
+            onclick="loginform_new_check_email()"
+          >
+            Продолжить
+          </button>
+          <p class="reg-popup__text">
+            Продолжая, вы соглашаетесь с
+            <a href="/legaluser" class="reg-popup__link"
+              >условиями обслуживания</a
+            >
+          </p>
+        </div>
+      </form>
+
+      <form id="regForm__remind" class="hidden" method="POST" action="/forgot">
+        <div class="reg-popup__wrapper">
+          <h3>Сбросить пароль</h3>
+          <p class="reg-popup__text">
+            Если вы забыли пароль, вы можете поменять его.
+          </p>
+
+          <input type="hidden" name="user[id]" value="" />
+          <input
+            id="remind-email"
+            class="reg-popup__input-req validate-initialized"
+            type="email"
+            name="email"
+            placeholder="Введите e-mail"
+            required=""
+          />
+          <button
+            class="reg-popup__btnPrev"
+            type="button"
+            onclick="$('#regForm__remind').addClass('hidden');"
+          ></button>
+          <button class="reg-popup__btnNext" type="submit" disabled="disabled">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

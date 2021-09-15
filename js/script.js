@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  PopUpHide();
+
   var acc = document.getElementsByClassName("accordion");
   var i;
 
@@ -31,4 +33,20 @@ $(document).ready(function () {
 
     window.location.hash = hash;
   });
+
+  $(".accept-btn").click(function () {
+    $("#ll-loginform-popup-wrapper").show();
+    $("body").addClass("disabled-scroll");
+  });
+});
+function PopUpHide() {
+  $("#ll-loginform-popup-wrapper").hide();
+  $("body").removeClass("disabled-scroll");
+}
+$(document).mouseup(function (e) {
+  var container = $("#ll-loginform-popup-wrapper");
+  if (container.has(e.target).length === 0) {
+    container.hide();
+    $("body").removeClass("disabled-scroll");
+  }
 });

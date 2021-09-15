@@ -5,6 +5,11 @@ body {
   padding: 40px 40px 115px 40px;
 }
 
+html.disabled-scroll,
+body.disabled-scroll {
+  overflow: hidden;
+}
+
 .main-wrapper {
   color: $dark_main;
   h3 {
@@ -203,6 +208,8 @@ body {
       align-content: center;
       background: #f8db73;
       border-radius: 40px;
+      color: $dark_main;
+      text-decoration: none;
 
       p {
         font: 600 32px/40px "Source Sans Pro", sans-serif;
@@ -250,10 +257,16 @@ body {
       align-items: flex-start;
       flex-wrap: wrap;
       gap: 32px 32px;
+
       img {
-        max-width: 162px;
+        width: 162px;
         height: auto;
         flex: 0 0 auto;
+        filter: sepia(100%) hue-rotate(190deg) saturate(1000%) opacity(0.2);
+
+        &:hover {
+          filter: none;
+        }
       }
     }
   }
@@ -502,5 +515,11 @@ a {
   }
   h3 {
     font: 700 28px/36px "Source Sans Pro", sans-serif !important;
+  }
+  .partners__block {
+    img {
+      width: 122px !important;
+      height: auto;
+    }
   }
 }

@@ -663,7 +663,7 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  top: 178px;
+  top: 140px;
   border: none;
   background: linear-gradient(180deg, #f8db73 0%, #f7bb4e 100%), #ffffff;
   z-index: 10;
@@ -671,6 +671,7 @@ a {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
   display: none;
+  cursor: pointer;
 }
 .slider-btn__prev label {
   left: -4px;

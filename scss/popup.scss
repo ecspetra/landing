@@ -1,0 +1,653 @@
+/*! CSS Used from: https://s.livelib.ru/css/style2017.20210902.css */
+
+div,
+span,
+h3,
+p,
+a,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+:focus {
+  outline: 0;
+}
+
+input[type="text"] {
+  font-family: "PT Sans", Tahoma, Helvetica, sans-serif;
+  vertical-align: middle;
+  border: 1px solid #c5c5c5;
+  background: #fff;
+  color: #757478;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h3 {
+  clear: both;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border: 0;
+}
+
+a {
+  color: #3e99ed;
+  text-decoration: none;
+}
+
+input[type="text"] {
+  color: #222222;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*! CSS Used from: https://s.livelib.ru/skins/ll2019/css/addbook2019.20210902.css */
+
+.hidden {
+  display: none;
+}
+
+a:visited {
+  opacity: 1;
+}
+
+/*! CSS Used from: https://s.livelib.ru/css/simplebar.20210902.css */
+
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+}
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0;
+}
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.simplebar-content {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+}
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background: #d1d4d6;
+    border-radius: 7px;
+    left: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+}
+
+.simplebar-track {
+  &.simplebar-vertical {
+    top: 0;
+    width: 10px;
+    right: 4px;
+
+    .simplebar-scrollbar:before {
+      top: 2px;
+      bottom: 2px;
+    }
+  }
+
+  &.simplebar-horizontal {
+    left: 0;
+    height: 11px;
+
+    .simplebar-scrollbar {
+      &:before {
+        height: 100%;
+        left: 2px;
+        right: 2px;
+      }
+
+      right: auto;
+      left: 0;
+      top: 2px;
+      height: 7px;
+      min-height: 0;
+      min-width: 10px;
+      width: auto;
+    }
+  }
+}
+
+/*! CSS Used from: https://s.livelib.ru/skins/ll2019/css/style.20210902.css */
+
+a {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.reg-popup__sal {
+  &.icon-vkontakte {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") 0px -286px
+      no-repeat;
+  }
+
+  &.icon-facebook {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -50px -286px
+      no-repeat;
+  }
+
+  &.icon-mailru {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -200px -286px
+      no-repeat;
+  }
+
+  &.icon-twitter {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -150px -286px
+      no-repeat;
+  }
+
+  &.icon-odnoklassniki {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -100px -286px
+      no-repeat;
+  }
+
+  &.icon-google {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -400px -286px
+      no-repeat;
+  }
+
+  &.icon-litres {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -500px -286px
+      no-repeat;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+  display: none;
+  display: none !important;
+  display: none !important;
+  display: none !important;
+  display: none;
+}
+
+.icon-vkontakte {
+  background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") 0 -336px
+    no-repeat;
+}
+
+.icon-facebook {
+  background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -26px -336px
+    no-repeat;
+}
+
+.icon-mailru {
+  background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -104px -336px
+    no-repeat;
+}
+
+.icon-twitter {
+  background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -78px -336px
+    no-repeat;
+}
+
+.icon-odnoklassniki {
+  background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -52px -336px
+    no-repeat;
+}
+
+.icon-livejournal {
+  background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -130px -336px
+    no-repeat;
+}
+
+/*! CSS Used from: https://s.livelib.ru//css/authorize.20210902.css */
+
+.ll-loginform {
+  display: none;
+}
+
+/*! CSS Used from: https://s.livelib.ru//css/authorize2019.20210902.css */
+
+.reg-popup form {
+  position: fixed;
+  background: #fff;
+  top: calc(50% - 308px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 43px 50px 56px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto;
+  width: 508px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.reg-popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+form.hidden {
+  display: none;
+}
+
+.reg-popup__wrapper {
+  h3 {
+    font: 600 26px/32px "Source Sans Pro", sans-serif;
+    margin: 0 0 40px;
+    text-align: center;
+  }
+
+  > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 208px;
+    min-width: 300px;
+    overflow: hidden;
+  }
+}
+
+#regForm__checkin {
+  span:not(.reg-popup__unvalid) {
+    font: 20px/24px "Source Sans Pro", sans-serif;
+    color: #6f7073;
+    margin: 29px 0 35px;
+  }
+
+  .reg-popup__unvalid {
+    margin: -16px 0 0px;
+  }
+
+  h3 + .reg-popup__text {
+    top: 102px;
+    bottom: auto;
+    width: 400px;
+    text-align: center;
+  }
+}
+
+.reg-popup__sal {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 16px 16px;
+
+  &:visited {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 0 16px 16px;
+  }
+
+  &.icon-vkontakte {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") 0px -286px
+      no-repeat;
+  }
+
+  &.icon-facebook {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -50px -286px
+      no-repeat;
+  }
+
+  &.icon-mailru {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -200px -286px
+      no-repeat;
+  }
+
+  &.icon-twitter {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -150px -286px
+      no-repeat;
+  }
+
+  &.icon-odnoklassniki {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -100px -286px
+      no-repeat;
+  }
+
+  &.icon-google {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -400px -286px
+      no-repeat;
+  }
+
+  &.icon-litres {
+    background: url("https://s.livelib.ru/img/skins/ll2019/SVGsprite13.svg") -500px -286px
+      no-repeat;
+  }
+}
+
+.reg-popup__text {
+  position: absolute;
+  font: 14px/16px "Source Sans Pro", sans-serif;
+  color: #6f7073;
+  margin: 0;
+  text-align: center;
+  bottom: 29px;
+}
+
+.reg-popup__link {
+  font: 14px/16px "Source Sans Pro", sans-serif;
+  color: #217dd1;
+
+  &:visited {
+    font: 14px/16px "Source Sans Pro", sans-serif;
+    color: #217dd1;
+  }
+}
+
+.reg-popup__btnNext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #fff;
+  background: #3e99ed;
+  font: 600 18px/24px "Source Sans Pro", sans-serif;
+  height: 48px;
+  border-radius: 24px;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 16px 0 0;
+
+  &:disabled {
+    background: #d2d4d6;
+  }
+}
+
+.reg-popup__btnPrev {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  top: 32px;
+  left: 32px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 9px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #000;
+    border-right: none;
+    border-top: none;
+  }
+}
+
+.reg-popup__wrapper input {
+  &[type="email"],
+  &[type="text"] {
+    border: 1px solid #d2d4d6;
+    width: 408px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 20px;
+    color: #252626;
+    font: 16px/41px "Source Sans Pro", sans-serif;
+    margin: 0 0 16px;
+  }
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder,
+  &::placeholder {
+    color: #88898c;
+  }
+}
+
+#regForm__remind {
+  h3 {
+    margin: 0 0 177px;
+  }
+
+  .reg-popup__text {
+    top: 122px;
+    bottom: auto;
+    font-size: 18px;
+  }
+}
+
+.reg-popup__unvalid {
+  color: #fa385d;
+  font: 14px/16px "Source Sans Pro", sans-serif;
+}
+
+.reg-popup-v2 {
+  #regForm__checkin .simplebar-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -16px;
+  }
+
+  .reg-popup__sal {
+    &::before {
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+    }
+
+    &.icon-livejournal {
+      display: none;
+    }
+  }
+}
+
+.reg-popup.modal {
+  z-index: 10001;
+}
+
+.reg-popup__wrapper > div.regForm__checkin-simplebar {
+  max-width: 332px;
+}
+
+/*! CSS Used from: https://s.livelib.ru/css/userbookform2020-v3.20210902.css */
+
+.hidden {
+  display: none !important;
+}
